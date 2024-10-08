@@ -1,1 +1,1 @@
-save pretrain model after using coco dataset to train 
+save pretrain model after using crowdpose dataset to train 
