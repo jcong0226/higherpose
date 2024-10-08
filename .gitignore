@@ -1,4 +1,5 @@
 .idea
+models/coco/*.pth.*
+models/crowdpose/*.pth.*
 models/coco/*.pth
 models/crowdpose/*.pth
-models/crowdpose/*.tar
