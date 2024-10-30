@@ -1,5 +1,14 @@
-# SATPose: Enhancing Low-Resolution Human Pose Estimation with Structure-Aware Transformer
-This is the readme file for the code release of "SATPose: Enhancing Low-Resolution Human Pose Estimation with Structure-Aware Transformer" on PyTorch platform.
+# Structure-Aware Transformer for Enhanced Low-Resolution Human Pose Estimation
+Official implementation of paper(Structure-Aware Transformer for Enhanced Low-Resolution Human Pose Estimation(HigherPose)).
+
+## Environment
+
+The code is conducted under the following environment:
+
+* Ubuntu 22.04
+* Python 3.8.18
+* PyTorch 1.8.1
+* CUDA 10.2
 
 ## Training from scratch
 For the training stage, you should run：

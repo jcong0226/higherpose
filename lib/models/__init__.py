@@ -8,7 +8,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import models.pose_higher_hrnet
+import models.higher_pose
 import models.pose_mobilenet
 import models.pose_simplenet
 import models.pose_supermobilenet

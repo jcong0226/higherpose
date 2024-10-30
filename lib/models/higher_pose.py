@@ -330,6 +330,7 @@ class PoseHigherResolutionNet(nn.Module):
             d_model=self.encoder_dim,
             nhead=4
         )
+        # Structure-aware transformer
         self.global_encoder = TransformerEncoder(
             global_encoder_layer,
             self.encoder_layers_num,

@@ -91,7 +91,7 @@ class TransformerEncoderLayer(nn.Module):
         self.return_atten_map = return_atten_map
 
         self.sr_ratio = 1
-        self.sr = nn.Sequential(
+        self.dw = nn.Sequential(
             nn.Conv2d(d_model, d_model, kernel_size=self.sr_ratio, stride=self.sr_ratio, groups=d_model, bias=True),
             nn.BatchNorm2d(d_model, eps=1e-5),
         )
@@ -106,7 +106,7 @@ class TransformerEncoderLayer(nn.Module):
         N, B, C = src1.shape
         q = self.with_pos_embed(src1, pos)
         src1 = src.permute(1, 2, 0).reshape(B, C, H, W)
-        src1 = self.sr(src1).reshape(B, C, -1).permute(2, 0, 1)
+        src1 = self.dw(src1).reshape(B, C, -1).permute(2, 0, 1)
         k = self.with_pos_embed(src1, pos)
         v = self.with_pos_embed(src1, pos)
 
