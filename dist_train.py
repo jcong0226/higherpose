@@ -27,7 +27,7 @@ import torch.nn.parallel
 import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 import _init_paths
 import models

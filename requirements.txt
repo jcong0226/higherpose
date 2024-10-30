@@ -1,12 +1,12 @@
-EasyDict==1.7
+EasyDict
 opencv-python
 Cython
 scipy
 pandas
-pyyaml==5.4.1
+pyyaml
 json_tricks
 scikit-image
-tensorboardX
+tensorboard
 yacs
 cffi
 munkres
